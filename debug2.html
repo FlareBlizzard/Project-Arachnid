@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DEBUGS</title>
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/semantic.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="IAMHERE">
+      <h1>ASDZCCAS</h1>
+    </div>
+    <button type="button" name="button" onclick="changeValue(1)">ASDZXCASD</button>
+    <button type="button" name="button" onclick="changeValue(2)">ASDZXCASD</button>
+    <button type="button" name="button" onclick="changeValue(3)">ASDZXCASD</button>
+    <script type="text/javascript">
+      function changeValue(a)
+      {
+        if(a == 1)
+        {
+            $('.IAMHERE').fadeIn('slow', function(){
+              $('.IAMHERE').html("<h1>Button1</h1>");
+            });
+        }
+        else if(a == 2)
+        {
+            $('.IAMHERE').html("<h1>Button2</h1>");
+        }
+        else if(a == 3)
+        {
+          $('.IAMHERE').html("<h1>Button3</h3>");
+        }
+      }
+    </script>
+
+    <div class="CHANGEME">
+      <div class="ui description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.m
+      </div>
+    </div>
+    <div class="ui teal button" id="changeButton">
+      Change Thee
+    </div>
+    <div class="ui teal button" id="changeButton2">
+      Change Thee
+    </div>
+    <div class="ui teal button" id="changeButton3">
+      Change Thee
+    </div>
+
+    <script type="text/javascript">
+      var html5;
+      $("#changeButton, #changeButton2, #changeButton3").hover(function (){
+          html5 = $(".ui.description").html();
+          switch($(this))
+          {
+            case "#changButton":
+                $('.ui.description').hide().html("<h1>AZCAQWE</h1>").fadeIn('slow');
+                break;
+            case "#changButton2":
+                $('.ui.description').hide().html("<h1>AZCCXCASDCGGGZ</h1>").fadeIn('slow');
+                break;
+            case "#changButton3":
+                $('.ui.description').hide().html("<h1>AZASDZc</h1>").fadeIn('slow');
+                break;
+          }
+      }, function (){
+        $(".ui.description").hide().html(html5).fadeIn('slow');
+      });
+    </script>
+
+    <div class="default">
+        <div class="ui header">
+          DEFAULT CONTENT
+        </div>
+    </div>
+
+
+    <div class="appliedScience">
+        <div class="ui header">
+          APPLIED SCIENCE CONTENT
+        </div>
+    </div>
+
+    <div class="lifeScience">
+        <div class="ui header">
+          LIFE SCIENCE CONTENT
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="ui grid container">
+      <button class="ui inverted blue big button" id="button1">Applied</button>
+      <button class="ui inverted green big button" id="button2">Life</button>
+    </div>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".appliedScience, .lifeScience").hide();
+        $("#button1, #button2").click(function()
+        {
+          $(".appliedScience, .lifeScience").hide();
+
+          if($(this).attr("id") == "button1")
+          {
+            $(".appliedScience").fadeIn('slow');
+          }
+          else if($(this).attr("id") == "button2")
+          {
+            $(".lifeScience").fadeIn('slow');
+          }
+        });
+      });
+
+      /*function changeContent(x){
+        if (x == 1)
+        {
+          $('.appliedScience').transition('horizontal flip', '500ms')
+        }
+        else if (x == 2)
+        {
+          $('.lifeScience').transition('horizontal flip', '500ms')
+        }
+      }*/
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+    });
+    </script>
+
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <div>
+    <input type="button" id="btn" class="btn btn-default" value="click me">
+    </div>
+
+    <div id="Create" style="display:none">
+    Hello
+    </div>
+
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $("#Create").toggle();
+        });
+    });
+    </script>
+
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function() {
+        function aClick() {
+          $("div").fadeIn("slow");
+          }
+        $("#bind").click(function () {
+            $("#theone").on("click", aClick).text("Can Click!");
+        });
+        $("#unbind").click(function () {
+          $("#theone").off("click", aClick).text("Does nothing...");
+        });
+      });
+    </script>
+
+    <button id="theone">Does nothing...</button>
+    <button id="bind">Bind Click</button>
+    <button id="unbind">Unbind Click</button>
+    <div style="display:none;">Click!</div>
+
+    <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ff99&amp;src=2fbgkeqn958tjfrfjvciuqdobg%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=Asia%2FManila" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  </body>
+</html>
