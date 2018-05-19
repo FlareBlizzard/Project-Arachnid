@@ -1,8 +1,0 @@
-Note:
-
-# Added dist folder, ito na lang yung mga gagamiting semantic.css at semantic.js folder, hindi na iisa-isahin
-# Removed assets and components directory, kasi ang gagamitin na lang is semantic.css and semantic.js at dist folder
-# Also added qshs folder in img directory, contains the drafted pictures for the facilities section
-
-
-# Removed search field in side nav

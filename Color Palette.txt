@@ -1,6 +1,0 @@
-Color Palette
-#378752
-#7bb38d
-#badabf
-#e3f1e2
-#73816a
